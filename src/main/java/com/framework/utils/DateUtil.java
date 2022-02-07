@@ -6,7 +6,7 @@ public class DateUtil {
         boolean isTodayHoliday = switch (day) {
             case "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" -> false;
             case "SATURDAY", "SUNDAY" -> true;
-            default -> throw new NullPointerException();
+            default -> throw new IllegalStateException("Unknown day");
         };
         return isTodayHoliday ? "Today is holiday!" : "Today is not holiday!";
     }

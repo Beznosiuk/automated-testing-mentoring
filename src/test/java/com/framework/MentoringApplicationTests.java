@@ -1,5 +1,6 @@
 package com.framework;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -21,7 +22,9 @@ class MentoringApplicationTests {
     }
 
     @Test
-    void shouldVerifyHolidayAndNotHolidayDayNeg() {
-        assertThat(isTodayHoliday("Test")).isEqualTo("Today is holiday!");
+    void testTest() {
+        var nullPointerException =
+                Assertions.assertThrows(NullPointerException.class, NullPointerMessageTest::createNullPointerException);
+        System.out.println(nullPointerException.getMessage());
     }
 }
