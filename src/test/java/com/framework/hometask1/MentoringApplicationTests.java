@@ -1,13 +1,16 @@
-package com.framework;
+package com.framework.hometask1;
 
+import com.epam.reportportal.junit5.ReportPortalExtension;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.framework.utils.DateUtil.isTodayHoliday;
+import static com.framework.hometask1.utils.DateUtil.isTodayHoliday;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
+@ExtendWith(ReportPortalExtension.class)
 class MentoringApplicationTests {
 
     @Test

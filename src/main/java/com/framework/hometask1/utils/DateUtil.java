@@ -1,4 +1,4 @@
-package com.framework.utils;
+package com.framework.hometask1.utils;
 
 public class DateUtil {
 

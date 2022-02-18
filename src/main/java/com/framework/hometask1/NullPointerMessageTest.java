@@ -1,4 +1,4 @@
-package com.framework;
+package com.framework.hometask1;
 
 import java.util.List;
 
